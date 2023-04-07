@@ -1,0 +1,27 @@
+# Python == 3.7.2
+torch
+#==1.4.0
+torchvision
+#==0.5.0
+numpy
+tqdm
+tensorboard
+tensorboardX
+ml-collections
+medpy
+SimpleITK
+scipy
+h5py
+timm
+einops
+synapseclient
+yacs
+munch
+
+# Finally, Run this for CUDA Enabled Torch..
+## pip install torch==1.13.0+cu117 torchvision==0.15.1+cu117 --extra-index-url https://download.pytorch.org/whl/cu117
+
+
+# Working::
+# pip install torch==1.13.1+cu117 --extra-index-url https://download.pytorch.org/whl/cu117 --no-cache-dir
+# pip install torchvision==0.14.1+cu117 --extra-index-url https://download.pytorch.org/whl/cu117 --no-cache-dir

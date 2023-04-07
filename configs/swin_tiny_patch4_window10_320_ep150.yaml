@@ -1,0 +1,20 @@
+MODEL:
+  TYPE: swin
+  NAME: swin_tiny_patch4_window10_320_ep150
+  DROP_PATH_RATE: 0.2
+  #PRETRAIN_CKPT: "./pretrained_ckpt/swin_tiny_patch4_window10_320_ep150.pth"
+  SWIN:
+    FINAL_UPSAMPLE: "expand_first"
+    EMBED_DIM: 96
+    DEPTHS: [ 2, 2, 2, 2 ]
+    DECODER_DEPTHS: [ 2, 2, 2, 1]
+    NUM_HEADS: [ 3, 6, 12, 24 ]
+    WINDOW_SIZE: 10
+DATA:
+  IMG_SIZE: 320
+
+TRAIN:
+  OUTPUT_DIR: "output/swin_tiny_patch4_window10_320_ep150"
+  MAX_EPOCHS: 150
+  BASE_LR: 0.05
+  BATCH_SIZE: 24

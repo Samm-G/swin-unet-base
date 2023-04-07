@@ -1,0 +1,7 @@
+/data/project_TransUNet/*
+/venv
+/output/*
+/output_bkp
+/test_log/*
+/test_log_bkp
+/pretrained_ckpt/*
